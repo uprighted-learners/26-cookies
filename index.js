@@ -34,6 +34,11 @@ app.get('/remove/cart', (req, res) => {
     res.send('Cart cookies cleared!');
 });
 
+app.get('/cheese', (req, res) => {
+    res.cookie('cheese', 'gouda');
+    res.send('Cheese cookies set!');
+});
+
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`);
 });
